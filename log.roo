@@ -1,0 +1,75 @@
+// Spring Roo 2.0.0.RC1 [rev 28015e3] log opened at 2017-08-29 18:52:39
+project setup --topLevelPackage org.northwind --projectName "Northwind" --java 8 --multimodule STANDARD
+// Spring Roo 2.0.0.RC1 [rev 28015e3] log closed at 2017-08-29 18:52:41
+// Spring Roo 2.0.0.RC1 [rev 28015e3] log opened at 2017-08-29 18:52:43
+settings add --name spring.roo.jpa.require.schema-object-name --value false --force
+jpa setup --provider HIBERNATE  --database MYSQL --hostName 127.0.0.1 --databaseName spring --userName root  --password root --force
+module focus --moduleName model
+entity jpa --class ~.User --readOnly
+entity jpa --class ~.User --readOnly
+entity jpa --class ~.City --readOnly
+field string --fieldName description
+field string --fieldName xiaomin
+repository jpa --all
+service --all
+web mvc setup
+web mvc controller --all --pathPrefix /api
+// [failed] push-in --package model:org.northwind.model
+push-in --package model:org.northwind.model
+!os mvn package
+!os mvn package
+// Spring Roo 2.0.0.RC1 [rev 28015e3] log closed at 2017-08-30 09:07:38
+// Spring Roo 2.0.0.RC1 [rev 28015e3] log opened at 2017-08-30 13:33:12
+jpa setup --provider HIBERNATE  --database MYSQL --hostName 127.0.0.1:3306 --databaseName spring --userName root  --password root --force
+jpa setup --provider HIBERNATE  --database MYSQL --hostName 127.0.0.1 --databaseName spring --userName root  --password root --force
+jpa setup --provider HIBERNATE  --database MYSQL --hostName 127.0.0.1:3306 --databaseName spring --userName root  --password root --force
+jpa setup --provider HIBERNATE  --database MYSQL --hostName 127.0.0.1 --databaseName spring --userName root  --password root --force
+// [failed] jpa setup --provider HIBERNATE  --database MYSQL 
+property add --key database.url --value jdbc:mysql://192.168.100.127:3306
+property add --key database.url --value jdbc:mysql://192.168.100.127:3306
+jpa setup --provider HIBERNATE  --database MYSQL --hostName 127.0.0.1 --databaseName spring --userName root  --password root --force
+// Spring Roo 2.0.0.RC1 [rev 28015e3] log opened at 2017-08-30 14:01:25
+jpa setup --provider HIBERNATE  --database MYSQL
+jpa setup --provider HIBERNATE  --database MYSQL
+property add --key database.url --value jdbc:mysql://192.168.100.127:3306
+property add --key database.username --value root 
+
+property add --key database.password --value root
+property add --key database.url --value jdbc:mysql://192.168.100.127:3306/spring
+property add --key database.url --value jdbc:mysql://192.168.100.127:3306/spring
+property add --key database.url --value jdbc:mysql://192.168.100.127:3306/spring
+jpa setup --provider HIBERNATE  --database MYSQL
+property add --key database.url --value jdbc:mysql://192.168.100.127:3306/spring
+property add --key database.url --value jdbc:mysql://127.0.0.1:3306:3306/spring
+// Spring Roo 2.0.0.RC1 [rev 28015e3] log closed at 2017-08-30 14:07:19
+// Spring Roo 2.0.0.RC1 [rev 28015e3] log opened at 2017-08-30 14:07:50
+jpa setup --provider HIBERNATE  --database MYSQL
+property add --key spring.database.url --value jdbc:mysql://127.0.0.1:3306:3306/spring
+property add --key spring.database.url --value jdbc:mysql://127.0.0.1:3306/spring
+property add --key spring.database.url --value jdbc:mysql://127.0.0.1:3306:3306/spring
+property add --key spring.database.url --value jdbc:mysql://127.0.0.1:3306/spring
+jpa setup --provider HIBERNATE  --database MYSQL
+property add --key spring.database.url --value jdbc:mysql://127.0.0.1:3306/spring
+property add --key spring.database.username --value root
+property add --key spring.database.password --value root
+jpa setup --provider HIBERNATE --database MYSQL --hostName 127.0.0.1:3306 --databaseName spring --userName root  --password root --force
+jpa setup --provider HIBERNATE --database MYSQL --hostName 127.0.0.1:3306 --databaseName spring --userName root  --password root --force
+jpa setup --provider HIBERNATE  --database MYSQL
+property add --key spring.datasource.url --value jdbc:mysql://127.0.0.1:3306:3306/spring
+property add --key spring.datasource.username --value root
+property add --key spring.datasource.password --value root
+property add --key spring.datasource.url --value jdbc:mysql://127.0.0.1:3306:3306/spring
+// [failed] jpa setup --provider HIBERNATE
+// [failed] jpa setup --provider HIBERNATE  --database MYSQL
+// Spring Roo 2.0.0.RC1 [rev 28015e3] log opened at 2017-08-30 14:25:48
+// [failed] jpa setup --provider HIBERNATE  --database MYSQL
+jpa setup --provider HIBERNATE  --database MYSQL
+property remove --key spring.datasource.url=jdbc\:mysql\://localhost\:3306
+property remove --key spring.datasource.url
+property add --key spring.datasource.url --value jdbc:mysql://127.0.0.1:3306/spring
+property remove --key spring.datasource.url
+property add --key spring.datasource.url --value jdbc:mysql://127.0.0.1:3306/spring?useUnicode=true&characterEncoding=UTF-8
+property add --key spring.datasource.username --value root
+property add --key spring.datasource.password --value root
+property add --key spring.jpa.properties.hibernate.hbm2ddl.auto --value update
+// Spring Roo 2.0.0.RC1 [rev 28015e3] log closed at 2017-08-30 14:55:46
